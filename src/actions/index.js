@@ -82,3 +82,17 @@ export const addInv = (invoices) => {
 	}
 }
 
+export const updateInv = (invoices) => {
+	return {
+		type: 'UPDATE_INV',
+		payload: invoices
+	}
+}
+
+export const deleteInv = (invoices) => {
+	return {
+		type: 'DELETE_INV',
+		payload: invoices 
+	}
+}
+

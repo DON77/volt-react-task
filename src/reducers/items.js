@@ -68,6 +68,16 @@ const items = (state = initialState, action) => {
 	        	invProducts: state.invProducts.concat(action.payload
 	        )})
 
+	    case 'UPDATE_INV':
+	        return state.merge({ 
+	        	invoices: action.payload
+	        })
+
+		case 'DELETE_INV':
+			return state.merge({ 
+				invoices: action.payload
+			})
+
 	  
 
 		default:
